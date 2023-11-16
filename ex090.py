@@ -2,8 +2,8 @@ print('-=' * 20)
 print('DICIONÁRIO - MÉDIA DO ALUNO')
 print('-=' * 20)
 aluno = dict()
-aluno['Nome'] = str(input('Digite o nome do aluno: ')).strip().upper()
-aluno['Média'] = float(input('Digite a média do aluno: '))
+aluno['Nome'] = str(input('Digite o nome do(a) aluno(a): ')).strip().upper()
+aluno['Média'] = float(input(f'Digite a média do(a) {aluno["Nome"]}: '))
 if aluno['Média'] >= 6:
     aluno['Situação'] = 'Aprovado(a)'
 else:
